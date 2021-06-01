@@ -1,0 +1,72 @@
+---
+title: "YOUR PAPER TITLE"
+author: YOUR NAME
+date: "Social Media and Web Analytics, 2021"
+output: beamer_presentation
+header-includes:
+- \usepackage{booktabs}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(rlist)
+library(modelsummary)
+```
+
+## Motivation
+
+**One slide, motivating your project**
+
+**Video Recording of your presentation must be less than 6 minutes long!**
+
+* Bullets 
+* Bullets
+
+1. Numbered List
+2. Numbered List
+
+## Data
+
+**One slide explaining the data** 
+
+```{r, echo = FALSE, fig.align='center', out.width='45%'}
+knitr::include_graphics('../output/fig-01.pdf')
+```
+
+## Methodology
+
+**One slide explaining your methods**
+
+Here's an equation... 
+
+$$
+y_i = x_i \beta + \varepsilon_i
+$$
+
+## Results
+
+**One slide showing your main result**
+
+
+```{r, echo = FALSE, results='asis'}
+# HERE's how I would to include 
+# a regression table, based on what I saved from 
+# code/analysis.R
+reg_models <- list.load('../output/reg_models.Rds')
+
+msummary(reg_models,
+         coef_map = c(
+             "log(gdpPercap)" = "log(GDP per Capita)",
+             "log(pop)" = "log(Population)"
+         ),
+         gof_omit = 'Pseudo|AIC|BIC|Log|Std',
+         title = 'My title',
+         notes = 'Notes: my table notes. Standard errors in parentheses are clustered at the XX level.'
+)
+```
+
+
+## Conclusion
+
+**One slide with your concluding remarks**

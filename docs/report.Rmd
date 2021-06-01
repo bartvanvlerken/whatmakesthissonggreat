@@ -1,0 +1,106 @@
+---
+title: YOUR PAPER TITLE
+author:
+- "YOUR NAME"
+abstract: 
+  This is the abstract. Write a (max) 125 word summary.
+bibliography: references.bib
+output: pdf_document
+header-includes: 
+- \usepackage{booktabs}
+
+---
+
+```{r, echo = FALSE}
+library(rlist)
+library(modelsummary)
+```
+
+# Introduction 
+Lorem ipsum dolor sit[@braams:babel] amet, consectetur adipiscing[@clark:pct] elit. Pellentesque rhoncus ut tellus eu tristique. Duis pharetra velit vitae viverra elementum. Nulla metus dui, pulvinar id enim at, pellentesque semper ipsum. Phasellus cursus dignissim ipsum, sed congue orci pretium quis. Maecenas rhoncus leo a cursus euismod. Fusce a erat eu ipsum tristique tempus at sed tortor. Aliquam erat volutpat. Donec at pretium lorem. Donec pretium nunc id nunc bibendum convallis. Phasellus quis enim id massa feugiat egestas hendrerit sollicitudin nibh. Sed blandit eros id tellus porta, eget ullamcorper urna posuere. Pellentesque laoreet lacus nibh, a mattis libero viverra sit amet. Sed vitae diam interdum, pharetra neque sit amet, dictum lectus.
+
+Donec massa justo, ultricies quis facilisis sed, tristique nec metus. Vestibulum id condimentum diam. Integer semper augue id porttitor ultrices. Cras vulputate felis eu diam porttitor, ac pulvinar nisi imperdiet. Donec eros felis, imperdiet vel malesuada at, varius et quam. Phasellus facilisis non risus eu placerat. Sed ac mollis lorem.
+
+# Related Work
+Nullam semper imperdiet orci, at lacinia est aliquet et. Sed justo nibh, aliquet et velit at, pharetra consequat velit. Nullam nec ligula sagittis, adipiscing nisl sed, varius massa. Mauris quam ante, aliquet a nunc et, faucibus imperdiet libero. Suspendisse odio tortor, bibendum vel semper sit amet, euismod ac ante. Nunc nec dignissim turpis, ac blandit massa. Donec auctor massa ac vestibulum aliquam. Fusce auctor dictum lobortis. Vivamus tortor augue, convallis quis augue sit amet, laoreet tristique quam. Donec id volutpat orci. Suspendisse at mi vel elit accumsan porta ac ut diam. Nulla ut dapibus quam.
+
+Sed est odio, ornare in rutrum et, dapibus in urna. Suspendisse varius massa in ipsum placerat, quis tristique magna consequat. Suspendisse non convallis augue. Quisque fermentum justo et lorem volutpat euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi sagittis interdum justo, eu consequat nisi convallis in. Sed tincidunt risus id lacinia ultrices. Phasellus ac ligula sed mi mattis lacinia ac non felis. Etiam at dui tellus.
+
+# Industry Background
+
+Praesent et euismod orci, non congue purus. 
+Etiam commodo orci facilisis, vulputate quam non, molestie lacus. Vivamus at ligula at eros sollicitudin efficitur. Nunc sit amet pulvinar turpis, vitae venenatis risus. Nunc elementum, leo id placerat facilisis, magna tellus maximus neque, non gravida mauris nisl vel lectus. Mauris maximus suscipit faucibus. In euismod enim velit, sed molestie velit imperdiet ac. Pellentesque vulputate magna nisi, at porta est porta dictum. Curabitur pulvinar ullamcorper ex, a aliquam justo tincidunt id. Fusce tristique scelerisque mi, nec mollis massa semper sit amet. Vivamus non sem dapibus, venenatis nunc in, vestibulum turpis.
+
+Aenean fringilla neque a diam feugiat luctus. Integer justo velit, hendrerit at iaculis in, tempus at quam. Vestibulum nec elit nibh. Ut quis sagittis eros, ut euismod tortor. Duis sodales imperdiet dui. Praesent eu varius ex. Nunc a elementum nisl. Aenean sollicitudin lectus vulputate eros tempus sollicitudin. Vestibulum viverra dapibus tempus. Phasellus commodo justo scelerisque quam auctor, eu maximus ligula vehicula. Integer maximus arcu vitae purus tempor maximus. Pellentesque et nunc nec enim lobortis rhoncus consectetur ut erat. Suspendisse laoreet maximus dolor quis luctus. Duis vestibulum dolor ut sem mattis ornare. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+# Data
+
+Duis nec purus sed neque porttitor tincidunt vitae quis augue. Donec porttitor aliquam ante, nec convallis nisl ornare eu. Morbi ut purus et justo commodo dignissim et nec nisl. Donec imperdiet tellus dolor, vel dignissim risus venenatis eu. Aliquam tempor imperdiet massa, nec fermentum tellus sollicitudin vulputate. Integer posuere porttitor pharetra. Praesent vehicula elementum diam a suscipit. Morbi viverra velit eget placerat pellentesque. Nunc congue augue non nisi ultrices tempor.
+
+## Data Collection
+
+In auctor neque at urna fringilla, ut faucibus augue aliquam. Sed rhoncus in est ut euismod. Integer tincidunt augue nulla, et viverra dolor ullamcorper in. Duis vestibulum, leo nec lacinia commodo, odio risus rutrum massa, quis sodales arcu est non leo. Nullam vestibulum libero elementum, ultricies leo vel, interdum elit. Pellentesque finibus tellus nec ligula mattis, eu congue risus lobortis. Sed pretium ligula id massa dapibus varius. Ut ante libero, consectetur eget neque id, mollis vulputate metus. Proin semper dignissim mollis. Donec at metus tellus. Quisque purus felis, viverra et turpis sed, viverra posuere odio. Ut ultrices aliquam nisl, in convallis quam dapibus et. Etiam in nisl ut ante finibus semper. Curabitur ultrices sem sed purus efficitur, eu congue eros sollicitudin.
+
+Morbi egestas orci elit, hendrerit ultrices ligula tempor ut. Proin magna nisi, porttitor nec nisl quis, dignissim posuere eros. Nam efficitur consequat massa non tempor. Nullam et ante ut felis rutrum ultrices a et nisi. Suspendisse in nulla dolor. Sed ultrices leo ac purus rutrum consequat. Nulla convallis ornare elit, eu pharetra lectus efficitur sollicitudin. In at arcu fermentum, molestie eros vitae, faucibus odio. Suspendisse lacinia nunc eu ipsum pulvinar rutrum.
+
+## Data Processing
+
+Aliquam at sollicitudin massa, quis eleifend enim. Nulla eget ipsum arcu. Cras id nisl vel eros tincidunt placerat. Sed ipsum lectus, sagittis in mi vitae, rhoncus dapibus urna. Proin ut augue enim. Aenean finibus odio vel magna condimentum consequat. Morbi a porttitor elit. Nulla sit amet posuere leo. Vivamus ornare enim sed nunc lobortis, vel pulvinar tortor iaculis. Nulla facilisi. Fusce efficitur ligula nisl, in aliquam eros dignissim non. Nulla non malesuada nisi. Pellentesque vehicula, odio ut scelerisque congue, sem est pellentesque elit, non bibendum massa diam sit amet quam. Donec justo enim, ullamcorper at quam eu, rhoncus gravida felis. Maecenas feugiat viverra lobortis.
+
+```{r, echo = FALSE, fig.align='center', fig.cap= "a caption" , out.height='40%'}
+knitr::include_graphics('../output/fig-01.pdf')
+```
+
+Etiam ac suscipit arcu. Suspendisse maximus orci dictum turpis malesuada, id auctor augue elementum. Pellentesque et dictum ligula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc hendrerit at magna a egestas. In consectetur sodales lectus, et eleifend nisl iaculis quis. Praesent ut nisi vitae mauris venenatis feugiat. Cras tempus pretium tempor. Integer vel sollicitudin ligula. Phasellus eleifend in ex at semper. Mauris tincidunt rhoncus purus, ut luctus ligula finibus ut. Morbi blandit, nunc nec dictum rhoncus, eros augue ultricies purus, non mattis nunc augue non lacus. Morbi id fringilla neque. Nunc a nisl odio. Fusce feugiat ante at dapibus varius.
+
+# Methodology
+
+Duis ultrices scelerisque massa, a eleifend leo egestas eu. Aliquam rhoncus risus nec turpis accumsan, non faucibus justo ullamcorper. Suspendisse potenti. Aliquam eu ultrices est, ornare dignissim lectus. Vivamus vestibulum auctor justo, id volutpat nibh aliquam sed. Vivamus porttitor lectus ut condimentum volutpat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed sodales neque eget accumsan congue. Nam elementum orci ut enim malesuada, ut fringilla lorem volutpat. Suspendisse vitae tincidunt risus, id tempor libero. Mauris vel suscipit lectus. Vestibulum varius, velit dictum tempus suscipit, eros sapien elementum leo, efficitur pretium est sapien quis nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+Praesent risus mi, consequat ut pretium vitae, tristique ullamcorper tellus. In ut velit aliquet eros fringilla euismod ultricies vitae eros. In quam quam, imperdiet non massa sit amet, volutpat finibus purus. Cras finibus sed metus hendrerit scelerisque. Nunc pellentesque, purus eu ultricies tempus, tellus augue iaculis ligula, quis venenatis mi lectus eu sapien. Etiam efficitur augue id augue auctor dignissim. Fusce tristique fermentum turpis. In sit amet nisi a leo convallis porttitor eget viverra orci. Curabitur ac interdum elit. In rutrum varius eros nec facilisis. Ut aliquet ante id mollis accumsan. Duis dignissim lectus est, venenatis fermentum justo ultrices vitae. Donec ac interdum enim. Curabitur ligula nisi, tempus nec libero non, euismod elementum mi.
+
+Nunc vitae interdum erat, rutrum fermentum enim. Nulla a tristique nulla. Sed eu molestie neque. Sed venenatis turpis justo, et ornare nibh dignissim sit amet. Sed bibendum iaculis augue non tincidunt. Praesent massa felis, cursus eu neque eget, cursus euismod purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec orci massa, condimentum egestas mauris et, placerat aliquam dolor.
+
+# Results
+
+Vestibulum eget euismod leo. Quisque feugiat augue vitae magna sollicitudin, a congue nisi scelerisque. Phasellus et est sit amet sapien gravida malesuada nec id libero. Vivamus ullamcorper semper odio in finibus. Donec in ullamcorper nibh, in euismod magna. Aliquam auctor dolor ullamcorper, consectetur arcu sit amet, aliquet libero. Morbi in vehicula felis, eget eleifend diam. Maecenas imperdiet justo a elit tincidunt congue. Pellentesque id lectus tortor. Phasellus ullamcorper urna sed ullamcorper pharetra. Ut in sollicitudin massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+
+```{r, echo = FALSE, results='asis'}
+# HERE's how I would to include 
+# a regression table, based on what I saved from 
+# code/analysis.R
+reg_models <- list.load('../output/reg_models.Rds')
+
+msummary(reg_models,
+         coef_map = c(
+             "log(gdpPercap)" = "log(GDP per Capita)",
+             "log(pop)" = "log(Population)"
+         ),
+         gof_omit = 'Pseudo|AIC|BIC|Log|Std',
+         title = 'My title',
+         notes = 'Notes: my table notes. Standard errors in parentheses are clustered at the XX level.'
+)
+```
+
+Quisque convallis interdum ligula vitae venenatis. Aliquam sagittis augue non faucibus placerat. Ut luctus, elit quis lacinia facilisis, ante diam molestie libero, nec pretium neque nunc id ante. Curabitur et eros dapibus, aliquam elit sed, vehicula massa. Aliquam condimentum sodales felis a varius. Nullam in elit sed turpis ullamcorper egestas at non dui. Vivamus nec magna id diam vestibulum ullamcorper. Sed dolor nunc, blandit vel odio a, aliquet varius lectus.
+
+Integer ac hendrerit elit. Nam efficitur pellentesque nisl. Morbi ullamcorper lacus quis libero pulvinar cursus. Aenean in iaculis risus. Phasellus pretium diam at facilisis tempus. Quisque sit amet mi vestibulum, porta est id, iaculis purus. In hac habitasse platea dictumst. Phasellus placerat dignissim velit ac luctus. Cras gravida ipsum in felis interdum, ut laoreet nisl varius. Praesent maximus, urna sed porttitor molestie, tellus purus vestibulum purus, eu laoreet tellus velit a nibh.
+
+# Conclusion
+
+Nullam hendrerit lacinia diam, a feugiat leo varius eget. Sed hendrerit arcu lacus, sed aliquet neque malesuada sollicitudin. Nunc id ultricies arcu, et mattis mi. Suspendisse ultrices quam a purus egestas, vulputate tincidunt enim ullamcorper. Nullam tristique finibus sodales. Sed vitae justo non diam pharetra aliquam cursus a lacus. Proin auctor at est sit amet malesuada. Praesent ultrices lacinia consequat. Nulla sit amet lorem sagittis, sollicitudin turpis eget, congue quam.
+
+## Managerial Relevance
+
+Pellentesque efficitur luctus magna, a tincidunt orci malesuada at. Sed tristique pellentesque laoreet. Morbi tortor dui, sagittis in metus eu, ullamcorper fringilla dui. Sed in erat non tortor faucibus auctor. Vestibulum quis vehicula orci. Integer ut sem leo. Vestibulum interdum egestas tortor luctus dignissim. Donec imperdiet maximus euismod. Fusce vel nisi efficitur, tincidunt nisl sit amet, mollis orci. Quisque mollis, nunc eu venenatis bibendum, massa purus ultricies ipsum, sit amet pellentesque est orci eget nibh. Ut mi augue, hendrerit ut arcu semper, porta vestibulum magna. Mauris volutpat nunc eros, sit amet interdum sapien dictum nec. Cras molestie ante nec urna gravida accumsan. Donec in lorem id tellus condimentum ultrices vel id eros.
+
+## Future Directions of Research
+
+Proin imperdiet neque sem, lacinia cursus arcu vehicula at. Vestibulum tincidunt justo scelerisque leo aliquam placerat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer condimentum commodo elit non lobortis. Sed a nibh in magna condimentum maximus. Pellentesque at dolor nec nibh finibus vulputate a sit amet justo. Etiam et odio ut sapien elementum vulputate. Donec ultricies consequat congue. Suspendisse at nisi quis elit aliquet lacinia eget eget elit. Quisque malesuada urna nunc. Pellentesque finibus, velit non iaculis pellentesque, turpis lectus feugiat libero, sed pellentesque enim mi in lorem.
+
+# Word Count {-}
+
+Number of Words: `r wordcountaddin::word_count("report.Rmd")`
+
+# References
+
