@@ -9,9 +9,9 @@ Check the [course syllabus](https://tisem-digital-marketing.github.io/2021-smwa/
 
 ## Meta-Information
 
-* Name: YOUR_NAME
-* GitHub Handle: YOUR_GH_HANDLE
-* Proposed Project Title: YOUR_TITLE
+* Name: Bart van Vlerken
+* GitHub Handle: bartvanvlerken
+* Proposed Project Title: The Influence of YouTube Videos on Song Popularity
 
 ## Grading Information
 
