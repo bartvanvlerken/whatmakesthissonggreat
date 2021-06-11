@@ -83,8 +83,8 @@ Graders should run the scripts provided in the following order:
 
 1. `data/download_data.R`
 2. `code/data_cleaning.R`
-3. `code/analysis.R`
-4. `code/figures.R`
+3. `code/figures.R`
+4. `code/analysis.R`
 5. Knit report and slides
 
 **Note to students**: If you want the grader to deviate from this set of instructions -- you must tell us by modifying the notes above!
