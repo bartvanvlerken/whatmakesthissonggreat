@@ -1,13 +1,13 @@
 ---
-title: "YOUR PAPER TITLE"
-author: YOUR NAME
+title: "The Influence of YouTube Videos on Song Popularity"
+author: Bart van Vlerken
 date: "Social Media and Web Analytics, 2021"
 output: beamer_presentation
 header-includes:
 - \usepackage{booktabs}
 ---
 
-```{r setup, include=FALSE}
+```{r setup, include=FALSE, message = FALSE, warning = FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 
 library(rlist)
@@ -15,58 +15,41 @@ library(modelsummary)
 ```
 
 ## Motivation
-
-**One slide, motivating your project**
-
-**Video Recording of your presentation must be less than 6 minutes long!**
-
-* Bullets 
-* Bullets
-
-1. Numbered List
-2. Numbered List
+* Rick Beato's 'What Makes This Song Great'
+* Problems with Major Music Labels
+* Fleetwood Mac's 'Dreams' Re-entering Charts
+* Does the release of a ‘What Makes This Song Great?’ video on YouTube significantly increase the popularity metric for the song in question on YouTube, according to Google Trends?
 
 ## Data
+* Google Trends
+* Control Group
+* Data
 
-**One slide explaining the data** 
-
-```{r, echo = FALSE, fig.align='center', out.width='45%'}
-knitr::include_graphics('../output/fig-01.pdf')
+```{r, echo = FALSE, fig.align='center', out.width='60%'}
+knitr::include_graphics('../output/figure_1.pdf')
 ```
 
 ## Methodology
 
-**One slide explaining your methods**
-
-Here's an equation... 
+* Difference-in-differences Approach
 
 $$
-y_i = x_i \beta + \varepsilon_i
+Popularity_it = \beta_0 + \beta_1After_t + \beta_2Treated_i + \delta After_t * Treated_i + \varepsilon_it
 $$
 
-## Results
+* Parallel Trends Assumption
 
-**One slide showing your main result**
-
-
-```{r, echo = FALSE, results='asis'}
-# HERE's how I would to include 
-# a regression table, based on what I saved from 
-# code/analysis.R
-reg_models <- list.load('../output/reg_models.Rds')
-
-msummary(reg_models,
-         coef_map = c(
-             "log(gdpPercap)" = "log(GDP per Capita)",
-             "log(pop)" = "log(Population)"
-         ),
-         gof_omit = 'Pseudo|AIC|BIC|Log|Std',
-         title = 'My title',
-         notes = 'Notes: my table notes. Standard errors in parentheses are clustered at the XX level.'
-)
+```{r, echo = FALSE, fig.align='center', out.width='45%'}
+knitr::include_graphics('../output/figure_2.pdf')
 ```
 
+## Results
+* delta = 6.8, se = 2.207, alpha = 0.002, 95% CI = {2.490, 11.146}
+
+```{r, echo = FALSE, fig.align='center', out.width = '45%'}
+knitr::include_graphics('../output/figure_3.pdf')
+```
 
 ## Conclusion
-
-**One slide with your concluding remarks**
+* Popularity boost is likely due to (re)discovery of music
+* Main Takeaway for Major Labels
